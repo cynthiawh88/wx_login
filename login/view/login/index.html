@@ -1,0 +1,16 @@
+<div id="container"></div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script>
+	
+var WX = new Object();
+WX.__CONTAINERid = 'container'; //* 容器ID
+WX.__Appid = '***'; //* 公众号appid   
+WX.__Scope = 'snsapi_login'; //* 用户授权的作用域，使用逗号（,）分隔
+WX.__Redir = '**'; //回调地址 需要进行rulencode处理 回调 需要使用 urlencode()处理
+WX.__State = "{$wxlogin_state}";//  回调状态 //csrf验证
+WX.__Retype = 'code';	//死值 为获取凑得
+WX.__Style = ''; //提供"black"、"white"可选，默认为黑色文字描述。详见文档底部FAQ
+WX.__Href = '';//自定义样式链接，第三方可根据实际需求覆盖默认样式。详见文档底部FAQ
+</script>
+<script src="__STATIC__/login/js/wx_login.js"></script>
